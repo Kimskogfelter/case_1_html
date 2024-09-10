@@ -33,21 +33,23 @@
     <!-- div för presentation utav eventet -->
     <div>
         <!-- img element med relativ sökväg -->
-        <img src="images/tomorrowland1.jpg" alt="tomorrowland stage" width="1500">
+        <img src="images/tomorrowland1.jpg" alt="tomorrowland stage" width="1000">
         <h2>Välkommen till en helt ny värld</h2>
         <p> <strong>
                 Älskar du elektronisk musik, häftiga miljöer, underbara människor och den bästa maten på planeten? Sluta
-                leta utan anmäl ditt intresse redan idag till Tomorrowland 2025. <br>
+                leta utan anmäl ditt intresse redan idag till <br> 
+                Tomorrowland 2025.
                 Platserna går åt fort så passa på att anmäl dig direkt så du slipper bli utan en plats.
             </strong>
         </p>
         <p>
             Framtiden ser ljus ut! Över 65 miljoner människor såg Tomorrowland Winter 2024 online, 170 000 njöt av den
-            ikoniska festivalen på plats i franska alperna men bara en handfull hade en <br> VIP-upplevelse på
+            ikoniska festivalen på plats i franska alperna men <br> bara en handfull hade en VIP-upplevelse på
             Tomorrowland
             tack vare Coke Studio. De kunde höra och se toppartister på nära håll, dansa framför <br> Coke Studio
             Mountain-scenen och uppleva exklusiva DJ-sessioner i Coke Studio Creator Dome – allt de behövde göra var att
-            registrera sig. <br> För att se mer bilder och videos från detta eventet <a href="galleri.html">klicka här</a>
+            registrera sig. <br> För att se mer bilder och videos från detta eventet <a href="galleri.html">klicka
+                här</a>
 
 
         </p>
@@ -61,6 +63,67 @@
     <div>
         <h3>Anmäl ditt intresse nedan</h3>
 
+        <p>För att vi ska kunna hantera din bokning på bästa sätt ange även vilken vecka du helst vill boka <br>
+            och ifall du vill ha boende eller inte. Är det någon övrig information vi behöver veta så skriver du det i textrutan längst ned.</p>
+        <!-- form element -->
+        <form action="" method="get">
+            <!-- paragraf för namn, email och telefonnummer -->
+            <p>
+                <label for="first_name">Förnamn:</label>
+                <br>
+                <input type="text" name="first_name" id="first_name">
+                <br>
+                <label for="last_name">Efternamn:</label>
+                <br>
+                <input type="text" name="last_name" id="last_name">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="mobile_number">Telefonnummer:</label>
+                <br>
+                <input type="text" name="mobile_number" id="mobile_number" max="15" min="8">
+                                </p>
+            <!-- paragraf för vilken vecka man vill boka -->
+            <p>
+                <label for="date">Ange vecka:</label>
+                <br>
+                <!-- select element för att kunna välja datum -->
+                <select name="date" id="date">
+
+                    <!-- option element för att kunna välja mellan olika datum -->
+                    <option value="week1">Juli, vecka 27</option>
+
+                    <option value="week2" selected>Juli, vecka 28</option>
+                    <option value="week3">Juli, vecka 29</option>
+                </select>
+            </p>
+            <!-- paragraf för boende -->
+            <p>
+            <fieldset>
+                <legend>Boende:</legend>
+
+
+
+                <input type="radio" name="
+            accommodation" id="yes" value="yes"><label for="yes">Ja tack</label>
+                <br>
+
+                <input type="radio" name="
+            accommodation" id="no" value="no" checked><label for="no">Nej tack</label>
+            </fieldset>
+        </p>
+        <!-- paragraf för övrig information -->
+        <p>
+            <label for="textarea">Övrig information:</label>
+            <br>
+            <textarea name="textarea" id="textarea" rows="10" cols="130"></textarea>
+
+        </p>
+        <input type="submit" value="Anmäl intresse">
+        <input type="reset" value="Nollställ">
+        </form>
     </div>
     <!-- footer -->
     <hr>
