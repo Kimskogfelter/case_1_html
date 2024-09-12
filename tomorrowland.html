@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="icon" href="favicon\favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
     <title>Tomorrowland</title>
 </head>
 
@@ -22,7 +22,7 @@
 
             <a href="galleri.html">Galleri |</a>
 
-            
+
 
 
         </nav>
@@ -37,7 +37,7 @@
         <h2>Välkommen till en helt ny värld</h2>
         <p> <strong>
                 Älskar du elektronisk musik, häftiga miljöer, underbara människor och den bästa maten på planeten? Sluta
-                leta utan anmäl ditt intresse redan idag till <br> 
+                leta utan anmäl ditt intresse redan idag till <br>
                 Tomorrowland 2025.
                 Platserna går åt fort så passa på att anmäl dig direkt så du slipper bli utan en plats.
             </strong>
@@ -66,11 +66,12 @@
         <h3>Anmäl ditt intresse nedan</h3>
 
         <p>För att vi ska kunna hantera din bokning på bästa sätt ange vilken vecka du helst vill boka
-            och ifall du vill ha boende eller inte. <br> Är det någon övrig information vi behöver veta så skriver du det i textrutan längst ned.</p>
+            och ifall du vill ha boende eller inte. <br> Är det någon övrig information vi behöver veta så skriver du
+            det i textrutan längst ned.</p>
         <!-- form element -->
-        <form action="" method="get">
-            <!-- paragraf för namn, email och telefonnummer -->
-            <p>
+        <form action="tomorrowland.html" method="get">
+            <!-- input elements för namn, email och telefonnummer -->
+            
                 <label for="first_name">Förnamn:</label>
                 <br>
                 <input type="text" name="first_name" id="first_name" required>
@@ -85,10 +86,10 @@
                 <br>
                 <label for="mobile_number">Telefonnummer:</label>
                 <br>
-                <input type="text" name="mobile_number" id="mobile_number" max="15" min="8" required>
-                                </p>
-            <!-- paragraf för vilken vecka man vill boka -->
-            <p>
+                <input type="text" name="mobile_number" id="mobile_number" maxlength="15" minlength="8" required>
+            <br>
+            <!-- ange vilken vecka man vill boka -->
+            
                 <label for="date">Ange vecka:</label>
                 <br>
                 <!-- select element för att kunna välja datum -->
@@ -100,31 +101,30 @@
                     <option value="week2" selected>Juli, vecka 28</option>
                     <option value="week3">Juli, vecka 29</option>
                 </select>
-            </p>
-            <!-- paragraf för boende -->
-            <p>
-            <fieldset>
-                <legend>Boende:</legend>
-
-
-
-                <input type="radio" name="
-            accommodation" id="yes" value="yes"><label for="yes">Ja tack</label>
-                <br>
-
-                <input type="radio" name="
-            accommodation" id="no" value="no" checked><label for="no">Nej tack</label>
-            </fieldset>
-        </p>
-        <!-- paragraf för övrig information -->
-        <p>
-            <label for="textarea">Övrig information:</label>
             <br>
-            <textarea name="textarea" id="textarea" rows="10" cols="130"></textarea>
+            <!-- fieldset för boende -->
+                <fieldset>
+                    <legend>Boende:</legend>
 
-        </p>
-        <input type="submit" value="Anmäl intresse">
-        <input type="reset" value="Nollställ">
+
+
+                    <input type="radio" name="
+                    accommodation" id="yes" value="yes"><label for="yes">Ja tack</label>
+                    <br>
+
+                    <input type="radio" name="
+                    accommodation" id="no" value="no" checked><label for="no">Nej tack</label>
+                </fieldset>
+            <!-- textarea för övrig information -->
+            
+                <label for="textarea">Övrig information:</label>
+                <br>
+                <textarea name="textarea" id="textarea" rows="10" cols="130"></textarea>
+
+            <br>
+            <!-- knappar för anmäl intresse/nollställ -->
+            <input type="submit" value="Anmäl intresse">
+            <input type="reset" value="Nollställ">
         </form>
     </div>
     <!-- footer -->
