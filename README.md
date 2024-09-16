@@ -1,0 +1,1 @@
+* emojis på index.html sidan är hämtade från denna sida: https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb/
